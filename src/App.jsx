@@ -15,6 +15,7 @@ export default function App() {
           <Theme></Theme>
         </div>        
         <Carousel/>
+        <h4>Feature Products</h4>
         <div className="flex flex-wrap justify-center gap-2 mb-5">
           {
            ApiData.map( (data) => (
