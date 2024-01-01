@@ -1,5 +1,6 @@
 import Card from "./components/Card.jsx";
 import Carousel from "./components/Carousel.jsx";
+import Footer from "./components/Footer.jsx";
 import Theme from "./components/Theme.jsx";
 
 export default function App() {
@@ -9,12 +10,12 @@ export default function App() {
   return (
     <>
       <div className="text-center">
-        <div className="flex justify-between">
+        <div className="flex justify-between m-5">
           <h1 className="text-3xl">React APP</h1>
           <Theme></Theme>
         </div>        
         <Carousel/>
-        <div className="flex flex-wrap justify-center gap-2">
+        <div className="flex flex-wrap justify-center gap-2 mb-5">
           {
            ApiData.map( (data) => (
               <Card cardInfo={data} key={data.id} />
@@ -22,6 +23,8 @@ export default function App() {
           }
           
         </div>
+
+        <Footer/>
         
       </div>
     </>
